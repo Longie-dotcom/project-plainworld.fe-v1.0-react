@@ -1,0 +1,144 @@
+/* =========================================================
+   TOGGLE LIST EDITOR — LAYOUT
+   ========================================================= */
+
+.dual-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 20px;
+}
+
+.list-column {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-column h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Make list scrollable if too long */
+.scroll-list {
+  max-height: 300px; /* adjust as needed */
+  overflow-y: auto;
+  padding-right: 4px; /* for scrollbar space */
+}
+
+/* Optional: style the search input */
+.search-input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================================================
+   ITEMS — AVAILABLE
+   ========================================================= */
+
+.clickable {
+  padding: 10px 14px;
+  background: #f7f9fc;
+  border: 1px solid #e1e5ee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.clickable:hover {
+  background: #e9f3ff;
+  border-color: #b5d6ff;
+}
+
+
+/* =========================================================
+   ITEMS — SELECTED
+   ========================================================= */
+
+.selected-item {
+  padding: 12px 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  background: #fafafa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Buttons inside selected rows */
+.item-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+
+/* =========================================================
+   POPUP TITLE + ACTIONS
+   ========================================================= */
+
+.popup-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+.popup-actions {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+
+/* =========================================================
+   BADGES — ACTIVE / INACTIVE (optional enhancement)
+   ========================================================= */
+
+.toggle-button {
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  min-width: 90px;
+  transition: all 0.1s ease-in-out;
+}
+
+/* TRUE state (Active / Granted) */
+.toggle-on {
+  background: #edecfa;
+  color: #0a1f63;
+  border: 1px solid #4427a2;
+}
+
+/* FALSE state (Inactive / Revoked) */
+.toggle-off {
+  background: #ffe1e1;
+  color: #bc2424;
+  border: 1px solid #e6a0a0;
+}
+
+.toggle-button:hover {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: 1px solid #000000;
+}

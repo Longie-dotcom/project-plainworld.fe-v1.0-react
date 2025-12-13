@@ -1,0 +1,55 @@
+.crud-description {
+    color: #4b5563;
+    /* gray */
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+}
+
+.crud-meta {
+    font-size: 0.8rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.crud-meta-item:not(:last-child)::after {
+    content: "•";
+    margin: 0 0.5rem;
+    color: #9ca3af;
+}
+
+.info-chip,
+.filter-chip {
+    background: #e9f3ff;
+    border: 1px solid #b5d6ff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #1a4b8c;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.info-chip,
+.filter-chip:hover {
+    background: #d4e8ff;
+    border-color: #89b8ff;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        /* scale down for smaller screens */
+    }
+}

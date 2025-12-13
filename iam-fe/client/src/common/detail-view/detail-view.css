@@ -1,0 +1,109 @@
+/* Container */
+.detail-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Wrapper holding all detail rows */
+.detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Each row (label + value) */
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 14px;
+}
+
+/* Labels */
+.detail-row strong {
+  min-width: 120px;
+  color: #333;
+}
+
+/* Values */
+.detail-row span {
+  text-align: right;
+  color: #555;
+  word-break: break-word;
+}
+
+/* For list fields */
+.detail-list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.detail-list strong {
+  color: #333;
+}
+
+.detail-list-item {
+  padding: 6px 10px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #e0e0e0;
+  font-size: 13px;
+}
+
+/* Base item styling */
+.role-card-detail,
+.privilege-item {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  font-size: 14px;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.role-card-detail:hover,
+.privilege-item:hover {
+  border-color: #7567e3;
+  box-shadow: 0 0 4px rgba(117,103,227,0.4);
+}
+
+/* Status badges */
+.status-badge {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Active / Inactive */
+.status-active {
+  background: #28a745; /* green */
+}
+
+.status-inactive {
+  background: #dc3545; /* red */
+}
+
+/* Granted / Revoked */
+.status-granted {
+  background: #007bff; /* blue */
+}
+
+.status-revoked {
+  background: #6c757d; /* grey */
+}

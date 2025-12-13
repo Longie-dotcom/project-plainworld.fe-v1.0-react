@@ -1,0 +1,330 @@
+/* =========================================================
+   BUTTON BASE STYLES
+   ========================================================= */
+.blue-button,
+.black-button,
+.white-button {
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.25s ease;
+  padding: 8px 14px;
+  border: rgba(0, 0, 0, 0) 1px solid;
+}
+
+/* -------------------------
+   Blue Button
+   ------------------------- */
+.blue-button {
+  background: #4a90e2;
+  color: #fff;
+}
+
+.blue-button:hover {
+  background: #3b7ac2;
+}
+
+/* -------------------------
+   Black Button
+   ------------------------- */
+.black-button {
+  background: #000;
+  color: #fff;
+}
+
+.black-button:hover {
+  background: #fff;
+  color: #000;
+  border: #000000 1.4px solid;
+}
+
+/* -------------------------
+   White Button
+   ------------------------- */
+.white-button {
+  border: #000 1.4px solid;
+  background: #fff;
+  color: #000;
+}
+
+.white-button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* -------------------------
+   Disabled Button
+   ------------------------- */
+.disable-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+
+/* =========================================================
+   FLOATING BUTTONS
+   ========================================================= */
+.float-button,
+.float-button-top-right {
+  position: fixed;
+  padding: 12px 20px;
+  font-size: 15px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: 0.25s ease;
+  z-index: 2000;
+}
+
+/* -------------------------
+   Floating Bottom-Right
+   ------------------------- */
+.float-button {
+  bottom: 28px;
+  right: 32px;
+}
+
+.float-button:hover {
+  transform: translateY(-2px);
+}
+
+.float-button:active {
+  transform: translateY(0px);
+}
+
+/* -------------------------
+   Floating Top-Right
+   ------------------------- */
+.float-button-top-right {
+  top: 28px;
+  right: 32px;
+  cursor: pointer;
+}
+
+.float-button-top-right:hover {
+  transform: translateY(-2px);
+}
+
+.float-button-top-right:active {
+  transform: translateY(0px);
+}
+
+/* ============================================
+   FLEX LAYOUT CLUSTERS
+   ============================================ */
+
+/* Basic horizontal flow */
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-row-large {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Justify variants */
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Center content */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
+/* Vertical stacking */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.flex-col-large {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-col-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Wrapping groups */
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.cluster-large {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+
+/* ============================================
+   GRID LAYOUT CLUSTERS
+   ============================================ */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+/* Responsive auto-fit grid */
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+
+/* ============================================
+   COMMON LAYOUT BLOCKS
+   ============================================ */
+
+/* Centered content section */
+.section-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.section-center-horizontal {
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+/* Generic card/container */
+.block {
+  padding: 18px;
+  border: 1.4px solid #ddd;
+  border-radius: 6px;
+  background: #fff;
+}
+
+/* Content padding groups */
+.content {
+  padding: 20px 24px;
+}
+
+.content-large {
+  padding: 32px;
+}
+
+/* ============================================
+   WIDTH
+   ============================================ */
+.w-full {
+  width: 100%;
+}
+
+/* ============================================
+   SPACING CLUSTERS (not tiny utils)
+   ============================================ */
+
+/* Margin blocks */
+.mt-md {
+  margin-top: 20px;
+}
+
+.mt-lg {
+  margin-top: 32px;
+}
+
+.mb-md {
+  margin-bottom: 20px;
+}
+
+.mb-lg {
+  margin-bottom: 32px;
+}
+
+.my-md {
+  margin: 20px 0;
+}
+
+.my-lg {
+  margin: 32px 0;
+}
+
+/* Padding blocks */
+.p-md {
+  padding: 16px;
+}
+
+.p-lg {
+  padding: 24px;
+}
+
+.p-xl {
+  padding: 32px;
+}
+
+/* ============================================
+   SCROLLS
+   ============================================ */
+.scroll-hidden {
+  max-height: 60vh;
+  /* or any height you want */
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scroll-hidden::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari, Opera */
+}

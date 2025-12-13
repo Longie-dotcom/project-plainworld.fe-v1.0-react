@@ -1,0 +1,39 @@
+/* Elements */
+select,
+input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  accent-color: black;
+
+  /* match other inputs */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="checkbox"]:focus {
+  border-color: #7567e3;
+  box-shadow: 0 0 4px rgba(117, 103, 227, 0.5);
+}
+
+select:focus,
+input:focus {
+  border-color: #7567e3;
+  box-shadow: 0 0 4px rgba(117, 103, 227, 0.5);
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+}

@@ -1,0 +1,80 @@
+/* FULL SCREEN WRAPPER */
+.modal-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+
+  /* FADE IN the whole wrapper */
+  animation: modal-wrapper-fade 0.25s ease forwards;
+}
+
+/* DARK BACKDROP */
+.modal-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+
+  /* Fade the dark background */
+  opacity: 0;
+  animation: modal-overlay-fade 0.25s ease forwards;
+}
+
+/* MODAL BOX */
+.modal-container {
+  position: relative;
+  width: 420px;
+  max-width: 90%;
+  background: white;
+  border-radius: 7px;
+  padding: 24px;
+  margin: 80px auto 0 auto;
+  z-index: 2100;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+
+  /* START ANIMATION: fade + slight slide */
+  opacity: 0;
+  transform: translateY(-10px) scale(0.98);
+  animation: modal-popup 0.28s ease forwards;
+}
+
+/* CLOSE BUTTON */
+.modal-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 2vw !important;
+  height: 2vw !important;
+  margin: 0 !important;
+  cursor: pointer;
+  transition: 0.25s ease;
+  border-radius: 4px;
+}
+
+.modal-close-btn:hover {
+  background: #000;
+}
+
+/* ============================= */
+/*         ANIMATIONS           */
+/* ============================= */
+
+@keyframes modal-wrapper-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modal-overlay-fade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes modal-popup {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
