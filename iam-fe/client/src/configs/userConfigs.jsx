@@ -63,6 +63,7 @@ export const userUpdateFields = [
 
 // Detail view config
 export const userDetailFields = [
+  { key: "userID", label: "User ID" },
   { key: "fullName", label: "Full Name" },
   { key: "email", label: "Email" },
   { key: "gender", label: "Gender" },
